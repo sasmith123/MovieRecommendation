@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Movie Design</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <button id="return">Home</button>
+            <form action="" id="query-form">
+                <input autocomplete="off" type="text" name="query"  placeholder="Search" id="searchInput">
+                <input type="submit" name="submit" id="submit-button">
+            </form>
+        </div>
+    </div>
+    <div class = "search-results" id="search-results">
+        
+    </div>
+    <main>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-1.jpg');">
+                <img class="featured-title" src="f-t-1.png" alt="">
+                <p class="featured-desc"> In 1858, a bounty-hunter named King Schultz seeks out a slave named Django and buys him because he needs him to find some men he is looking for. After finding them, Django wants to find his wife, Broomhilda. Schultz offers to help him, Eventually they learn that she was sold to a plantation in Mississippi. Knowing they can't just go in and say they want her, they come up with a plan so that the owner will welcome them into his home and they can find a way.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Trending Movies This Week</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list" id="div1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Trending TV Shows This Week</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list" id="div2">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="featured-content" id = "featured-content-div"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-2.jpg');">
+                <img class="featured-title" src="f-t-2.png" alt="">
+                <p class="featured-desc">When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Popular Movies</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list"  id="div3">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Movies For Kids</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list" id="div4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>    
+    <script src="app.js" ></script>
+</body>
+
+</html>
